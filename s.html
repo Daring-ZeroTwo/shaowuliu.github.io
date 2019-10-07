@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>简略商品</title>
+		<style type="text/css">
+			body {
+				width: 100%;
+				background-color: seashell;
+				color: #333;
+				font-family: "lanting", Helvetica, "Microsoft Yahei", Arial, STHeiti, "Microsoft JhengHei", "微軟正黑體", sans-serif;
+				font-size: 14px;
+				-webkit-font-smoothing: antialiased;
+				line-height: 1.4;
+				position: relative;
+				overflow-x: hidden;
+			}
+			body{
+			       	background: #f6f6f6;
+			       }
+			#guding_first {
+				background: #00A1D6;
+				width: 100%;
+				height: 30px;
+				margin: 0px;
+				position: fixed;
+				z-index: 1;
+				top: 0px;
+			}
+			
+			#guding_first li {
+				color: white;
+				float: left;
+				list-style: none;
+				margin-left: 30px;
+				/*line-height: 30px;*/
+			}
+			
+			a {
+				text-decoration: none;
+				color: white;
+			}
+			
+			.top-wenzi {
+				text-decoration: none;
+				color: #909090;
+			}
+			
+			.a_get {
+				text-decoration: blink;
+			}
+			
+			#guding_first ul {
+				position: absolute;
+				margin-top: 3px;
+				margin-left: 1000px;
+			}
+			
+			#guding_second {
+				width: 100%;
+				height: 60px;
+				background: white;
+				position: fixed;
+				z-index: 1;
+				margin-top: 20px;
+			}
+			
+			#logo {
+				position: absolute;
+				margin-top: 0px;
+				margin-left: 320px;
+				padding: 0px;
+			}
+			/*//honor的左位置*/
+			
+			#guding_second ul {
+				margin-left: 500px;
+			}
+			
+			#guding_second li {
+				color: white;
+				float: left;
+				list-style: none;
+				width: 100px;
+				margin-top: 10px;
+			}
+			
+			#search {
+				border-radius: 15px;
+				size: 10px;
+				height: 20px;
+				margin-top: -3px;
+				margin-left: 30px;
+			}
+			
+			#beijing-1 {
+				position: absolute;
+				margin-top: -22px;
+				background: #909090;
+				margin-left: 140px;
+				width: 40px;
+				text-align: center;
+			}
+			
+			#top-iamge {
+				margin-left: 320px;
+				/*text-align: center;*/
+			}
+			
+			#foot {
+				position: absolute;
+				width: 100%;
+				height: 350px;
+				top: 1913px;
+				background: #00A1D6;
+			}
+			
+			#table1 {
+				position: absolute;
+				top: 50px;
+				left: 320px;
+				font-family: "bookman old style";
+				line-height: center;
+			}
+			
+			#table1 td {
+				width: 120px;
+				overflow: hidden
+			}
+			
+			#table1 th {
+				width: 100px;
+				margin-bottom: 0px;
+				/*			line-height: center;垂直居中下面是设置水平反向
+*/
+				text-align: left;
+			}
+			
+			#table1 tr {
+				/*				line-height: center;
+*/
+				text-align: left;
+			}
+			
+			#foot-left-first {
+				margin-top: 70px;
+				margin-left: 850px;
+			}
+			
+			#foot-left-second {
+				padding-left: 40px;
+				float: left;
+				min-width: 150px;
+			}
+			
+			#foot-left {
+				top: 100px;
+				/*				height: 180px;
+*/
+				border-left: 1px solid rgba(255, 255, 255, .5);
+				padding-left: 50px;
+				color: #fff;
+			}
+			
+			.item-item {
+				margin: 0px;
+				padding: 0px;
+				float: left;
+				min-width: 125px;
+			}
+			
+			#phone {
+				width: 60%;
+				text-align: left;
+				margin-left: 324px;
+				font-size: 24px;
+				height: 46px;
+				vertical-align: middle;
+				margin-top: 30px;
+			}
+			
+			#diannao {
+				width: 60%;
+				text-align: left;
+				margin-left: 324px;
+				font-size: 24px;
+				height: 46px;
+				vertical-align: middle;
+				margin-top: 30px;
+			}
+			
+			#box {
+				text-align: center;
+			}
+			
+			#box1 {
+				margin-left: 305px;
+			}
+			
+			#box2 {
+				margin-left: 305px;
+			}
+			
+			#box3 {
+				margin-left: 305px;
+			}
+			
+			.spxx {
+				margin-left: 20px;
+			}
+			
+			.dnxx {
+				margin-left: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="guding_first">
+			<ul>
+
+				<li>
+					<a href="##">华为商城</a>
+				</li>
+				<li>
+					<a href="##">花粉俱乐部</a>
+				</li>
+				<li style="width: 100px;">
+					<a href="##">EMUI</a>
+				</li>
+				<li>
+					<a href="##">登录&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+				</li>
+				<li style="margin-left: 20px;">
+					<a href="##">注册</a>
+				</li>
+			</ul>
+		</div>
+		<div id="guding_second">
+			<a id="logo" class="top-wenzi">
+				<h1>HONOR</h1></a>
+			<ul>
+				<li>
+					<a href="##" onmousemove="get_xiahua()" id="15" class="top-wenzi">产品</a>
+				</li>
+				<li>
+					<a href="##" class="top-wenzi">伙伴通</a>
+				</li>
+				<li>
+					<a href="##" class="top-wenzi">关于荣耀</a>
+				</li>
+				<li>
+					<a href="##" class="top-wenzi">新闻评测</a>
+				</li>
+				<li>
+					<a href="##" class="top-wenzi">视频</a>
+				</li>
+				<li>
+					<a href="##" class="top-wenzi">活动</a>
+				</li>
+				<li>
+					<a href="##" class="top-wenzi">服务支持</a>
+				</li>
+				<li><input type="text" name="" id="search" value="" />
+					<div id="beijing-1">
+						<a href="####">荣耀</a>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+		<div id="top-iamge">
+			<img src="../img/1.jpg" / id="lunbos">
+			<!--<img src="../img/2.jpg"/ >
+			<img src="../img/3.jpg"/ >-->
+		</div>
+
+		<div id="phone">
+			<span style="color: blue;">|</span>手机
+		</div>
+		<div id="box1">
+			<img src="../img/手机类.jpg" / class="spxx">
+			<img src="../js/sjcp1.PNG" / class="spxx">
+			<img src="../js/sjcp1.PNG" / class="spxx">
+			<img src="../js/sjcp1.PNG" / class="spxx">
+		</div>
+		<div id="box2">
+			<img src="../js/sjcp1.PNG" / class="spxx">
+			<img src="../js/sjcp1.PNG" / class="spxx">
+			<img src="../js/sjcp1.PNG" / class="spxx">
+			<img src="../js/sjcp1.PNG" / class="spxx">
+		</div>
+		<div id="diannao">
+			<span style="color: blue;">|</span>电脑
+		</div>
+		<div id="box3">
+			<img src="../img/dnxx.PNG" / class="dnxx">
+			<img src="../img/dnsp.PNG" / class="dnxx">
+			<img src="../img/dnsp.PNG" / class="dnxx">
+			<img src="../img/dnsp.PNG" / class="dnxx">
+		</div>
+
+		<div id="foot">
+
+			<table id="table1">
+				<tr>
+					<th>
+						<a href="##">
+							<h3>关于荣耀</h3></a>
+					</th>
+					<th>
+						<a href="##">
+							<h3>产品</h3></a>
+					</th>
+					<th>
+						<a href="##">
+							<h3>活动</h3></a>
+					</th>
+					<th>
+						<a href="##">
+							<h3>快速链接</h3></a>
+					</th>
+
+				</tr>
+				<tr>
+					<td>
+						<a href="##">荣耀大事记</a>
+					</td>
+					<td>手机</td>
+					<td>近期活动</td>
+					<td>物料下载</td>
+
+				</tr>
+				<tr>
+					<td>荣耀人物</td>
+					<td>荣耀智慧屏</td>
+					<td rowspan="2">服务支持</td>
+					<td>Vmall购物秘籍</td>
+
+				</tr>
+				<tr>
+					<td>品牌事件</td>
+					<td>笔记本&平板</td>
+
+					<td>移动端官网</td>
+				</tr>
+				<tr>
+
+					<td>新闻中心</td>
+					<td>穿戴设备</td>
+					<td>在线客服</td>
+					<td>伙伴通</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>智能家居</td>
+					<td>服务中心</td>
+					<td>华为商城</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>配件</td>
+					<td></td>
+					<td>华为开发联盟</td>
+				</tr>
+			</table>
+			<div id="foot-left-first">
+				<dl id="foot-left">
+					<dt style="padding-left:40px  ;font-size: 18px;">联系我们</dt>
+					<dd>
+						<div class="item-item">
+							<h6>热线电话：（24小时服务热线）</h6>
+
+							<p><span style="font-size: 18px;">400-830-8300</span></p>
+							<p><span style="font-size: 18px;">800-830-8300(座机)</span></p>
+						</div>
+
+						<div id="foot-left-second">
+							<h6>客服邮箱:</h6>
+							<p>任何意见和简易都可以联系我们</p>
+						</div>
+			</div>
+			</dd>
+			</dl>
+
+		</div>
+	</body>
+
+</html>
